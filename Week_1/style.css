@@ -1,0 +1,39 @@
+#elementId{
+    background-color:#ff8c42;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+nav a{
+    margin:0 15px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+ul li{
+    list-style-type:square;
+    margin-left:20px;
+}
+section{
+    border:2px solid #e0dede;
+    padding:15px;
+    margin:20px;
+}
+h2,h3{
+    color:#333;
+}
+.className{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+article{
+    border:1px solid #ccc;
+    padding:10px;
+    width:45%;
+    background-color:#fffdf6;
+}
+[type="text"] {
+    border-radius: 5px;
+    font-size: 14px;
+}

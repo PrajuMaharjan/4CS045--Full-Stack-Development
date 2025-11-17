@@ -4,7 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Website</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+         }
+        h1{
+            font-family:Georgia,serif;
+          }
+        p{
+            font-size:16px;
+         }
+        div{
+            margin-bottom:15px;
+           }
+        body{
+            font-family:Arial,sans-serif;
+            background-color:white;
+        	}
+    </style>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+    <header id="elementId">
+        <h1>My Recipe Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <input type="text" placeholder="Search recipes:" style="padding:8px; border:2px solid orange;">
+    <main>
+        <section id="recipes">
+            <h2>Popular Indian Dishes</h2>
+            <div class="className">
+                <article>
+                    <h3>Butter Chicken</h3>
+                    <ul>
+                        <li>Chicken</li>
+                        <li>Tomato puree</li>
+                        <li>Cream</li>
+                        <li>Butter</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Masala Dosa</h3>
+                    <ul>
+                        <li>Rice batter</li>
+                        <li>Potato filling</li>
+                        <li>Mustard seeds</li>
+                        <li>Curry leaves</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="className">
+                <article>
+                    <h3>Paneer Tikka</h3>
+                    <ul>
+                        <li>Paneer</li>
+                        <li>Yogurt</li>
+                        <li>Red chili powder</li>
+                        <li>Bell peppers</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Chole Bhature</h3>
+                    <ul>
+                        <li>Chickpeas</li>
+                        <li>Tomatoes</li>
+                        <li>Onions</li>
+                        <li>Spices</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <p>&copy; 2025 My Recipe Website</p>
+    </footer>
 </body>
+</html>
