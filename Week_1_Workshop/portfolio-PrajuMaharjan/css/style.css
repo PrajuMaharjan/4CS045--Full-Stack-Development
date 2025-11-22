@@ -10,7 +10,6 @@ header{
 	margin:0px;
 	padding:0px;
 	justify-content:space-between;
-	list-style:none;
 	background: darkblue;
 }
 h1{
@@ -18,7 +17,7 @@ h1{
 }
 
 nav ul{
-	font-size:8;
+	font-size:8px;
 	display:flex;
 	list-style:none;
 }
@@ -38,19 +37,22 @@ h2{
 	justify-content: center;
 	text-decoration: underline;
 }
-/*img,p {
-    display: inline-block; 
-    vertical-align: left; 
-}*/
 p{
 	font-size:24px;
 	text-align: center;
 }
-img{
+#bio {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+
+#bio img{
 	width:200px;
 	height:200px;
 	border-radius:50%;
-	margin-left:670px;
+	margin-left:20px auto;
 }
 table{
 	width:100%;
@@ -68,6 +70,18 @@ th{
 tr:hover{
 	background-color:whitesmoke;
 }
+#projects{
+	text-align: center;
+}
+#projects h2{
+	margin-bottom: 20px;
+}
+#projects img {
+	width: 45%;
+	height:auto;
+	object-fit: cover;
+	margin: 10px
+}
 form{
 	background-color: #ffffff; 
     padding: 20px; 
@@ -77,13 +91,25 @@ form{
     box-sizing: border-box; 
     justify-content: center
 }
-label{
+
+#cf label{
 	display:block;
+	font-weight: bold;
+	font-size: 20px;
 }
-#submit{
+
+#cf input[type="text"],
+#cf input[type="email"],
+#cf textarea {
+  width: 100%;
+  font-size: 16px;
+}
+
+#cf input[type="submit"]{
 	cursor:pointer;
 	width:100%;
 	height:50px;
 	background-color:skyblue;
 	font-weight:bold;
+	font-size:20px;
 }
