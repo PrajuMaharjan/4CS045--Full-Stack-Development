@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .add-btn {
+      padding: 10px 15px;
+      background: #0078d7;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .add-btn:hover {
+      background: #005a9e;
+    }
+    .users-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .user-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .user-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .user-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .user-card h3 {
+      margin: 10px 0 5px;
+      color: #0078d7;
+    }
+    .user-card p {
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <h1>Users Grid</h1>
+    <!-- Add User Button -->
+    <a href="adduser.html" class="add-btn"+ Add User</a>
+  </div>
+
+  <div class="users-container">
+    <!-- Example user cards -->
+    <div class="user-card" onclick="openUserPage(1)">
+      <img src="https://via.placeholder.com/80" alt="User 1">
+      <h3>Alice Johnson</h3>
+      <p>alice@example.com</p>
+    </div>
+    <div class="user-card" onclick="openUserPage(2)">
+      <img src="https://via.placeholder.com/80" alt="User 2">
+      <h3>Bob Smith</h3>
+      <p>bob@example.com</p>
+    </div>
+    <div class="user-card" onclick="openUserPage(3)">
+      <img src="https://via.placeholder.com/80" alt="User 3">
+      <h3>Charlie Brown</h3>
+      <p>charlie@example.com</p>
+    </div>
+  </div>
+
+  <script>
+    function openUserPage(userId) {
+      // Navigate to user page with ID
+      window.location.href = `user.html?id=${userId}`;
+    }
+    function getUser(){
+      fetch("http://localhost:3000/user")
+      .then(function(response){
+        return(response.json())
+      })
+      .then(function(data){
+        console.log(data);
+        
+      })
+    }
+  </script>
+</body>
+</html>

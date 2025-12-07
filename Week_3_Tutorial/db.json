@@ -1,0 +1,76 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "Full Name": "Arthur Morgan",
+      "Email": "arthurmorgan@gmail.com",
+      "Phone": "1356743",
+      "Address": "Baskerville",
+      "Role": "Manager",
+      "Bio": "sdgbjk",
+      "Twitter": "gsfhgsd",
+      "LinkedIn": "dfsg",
+      "GitHub": "sdbhj"
+    },
+    {
+      "id": "2",
+      "Full Name": "Arthur Morgan",
+      "Email": "arthurmorgan@gmail.com",
+      "Phone": "1356743",
+      "Address": "Baskerville",
+      "Role": "Manager",
+      "Bio": "sdgbjk",
+      "Twitter": "gsfhgsd",
+      "LinkedIn": "dfsg",
+      "GitHub": "sdbhj"
+    },
+    {
+      "id": "3",
+      "Full Name": "Arthur Morgan",
+      "Email": "arthurmorgan@gmail.com",
+      "Phone": "1356743",
+      "Address": "Baskerville",
+      "Role": "Manager",
+      "Bio": "sdgbjk",
+      "Twitter": "gsfhgsd",
+      "LinkedIn": "dfsg",
+      "GitHub": "sdbhj"
+    },
+    {
+      "id": "7c0f",
+      "name": "asffasasf",
+      "mail": "dsgaggsd",
+      "phone": "5574446",
+      "Address": "ahadsg",
+      "Role": "gagasg",
+      "Bio": {},
+      "Twitter": "https://www.google.com/",
+      "LinkedIn": "https://www.google.com/",
+      "GitHub": "https://www.google.com/"
+    },
+    {
+      "id": "3fd5",
+      "name": "asffasasf",
+      "mail": "dsgaggsd",
+      "phone": "5574446",
+      "Address": "ahadsg",
+      "Role": "gagasg",
+      "Bio": {},
+      "Twitter": "https://www.google.com/",
+      "LinkedIn": "https://www.google.com/",
+      "GitHub": "https://www.google.com/"
+    },
+    {
+      "id": "53e8",
+      "name": "mother",
+      "mail": "dsgaggsd",
+      "phone": "5574446",
+      "Address": "ahadsg",
+      "Role": "gagasg",
+      "Bio": {},
+      "Twitter": "https://www.google.com/",
+      "LinkedIn": "https://www.google.com/",
+      "GitHub": "https://www.google.com/"
+    }
+  ]
+}

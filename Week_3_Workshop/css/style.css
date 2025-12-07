@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:skyblue;
+  color:black;
+}
+
+h1 {
+  font-size:40px;
+  text-align:center;
+  margin:20px, auto;
+  color: darkblue;
+}
+
+form {
+  max-width:600px;
+  margin: 30px auto;
+  padding: 20px;
+  background:white;
+}
+
+h3 {
+  font-size:22px;
+  margin-bottom: 10px;
+  color: navy;
+}
+form input{
+  width: 95%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#add-movie-form{
+	text-align:center;
+}
+
+button {
+  background-color: darkblue;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size:15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:greenyellow;
+  color: darkblue;
+}
+
+h2 {
+  font-size:32px;
+  text-align:center;
+  margin:20px, auto;
+  color: darkblue;
+}

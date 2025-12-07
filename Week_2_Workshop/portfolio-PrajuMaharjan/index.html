@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1> Welcome to Praju Maharjan's Portfolio</h1>
+        <div id="menu-toggle" onclick="shownavbar()">&#9776</div>
+        <nav id = "navigation">
+        <ul>
+            <li><a href="#bio">About Me</a></li>
+            <li><a href="#edu">Education History</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#cf">Contact Me</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+    <video autoplay loop muted id="video-background" src="video/3125427-uhd_3840_2160_25fps.mp4">
+ Your browser does not support the video tag.
+ </video>
+        <div id="bio">
+        <h2>About Me</h2>
+        <img src="images/20240121_125936.jpg">
+        <p>Hi,I'm a Computer Science student currently studying at Herald College,Kathmandu.My passion in technology and AI has led me down this path and I aim to achieve much in this field in the future</p>
+        </div>
+        <div id="edu">
+        <h2>Education History</h2>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>GPA</th>
+                </tr>
+                <tr>
+                    <td>+2</td>
+                    <td>Kathmandu Bernhardt College, Balkhu</td>
+                    <td>2024</td>
+                    <td>3.05</td>
+                </tr>
+                <tr>
+                    <td>SEE</td>
+                    <td>Rosebud School, Buddhanagar</td>
+                    <td>2022</td>
+                    <td>3.00</td>
+                </tr>
+            </table>
+        </div>
+        <div id="projects">
+        <h2>Projects</h2>
+        <img src="images/Screenshot_1.png">
+        <img src="images/Screenshot_2.png">
+        </div>
+        <div id="cf">
+        <h2>Contact Me</h2>
+        <form onsubmit="form_checker(event)">
+            <label for="Name:" ><b>Name:</b></label>
+            <input type="text" id="Name"placeholder="Name">    
+            <label for="Email:"><b>Email:</b></label>
+            <input type="email" id="Email"placeholder="Email"> 
+            <label for="Message:"><b>Message:</b></label>
+            <textarea placeholder="Message" id="Message" rows=6></textarea>
+            <input type="submit" value="Submit" id="Submit">
+        </form>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New User</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0078d7;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #0078d7;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005a9e;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Add New User</h2>
+    <form id="userForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address">
+
+      <label for="role">Role</label>
+      <input type="text" id="role" name="role">
+
+      <label for="bio">Bio</label>
+      <textarea id="bio" name="bio"></textarea>
+
+      <label for="twitter">Twitter</label>
+      <input type="url" id="twitter" name="twitter">
+
+      <label for="linkedin">LinkedIn</label>
+      <input type="url" id="linkedin" name="linkedin">
+
+      <label for="github">GitHub</label>
+      <input type="url" id="github" name="github">
+
+      <button type="submit"id ="btn">Add User</button>
+    </form>
+  </div>
+
+  <script>
+   function addUser(data){
+    fetch("http://localhost:3000/user",{"method":"POST",body:data
+   })
+  }
+  document.querySelector("#btn").addEventListener("click",function(e){
+    e.preventDefault();
+    let name=document.querySelector("#name").value;
+    let email=document.querySelector("#email").value;
+    let phone=document.querySelector("#phone").value;
+    let address=document.querySelector("#address").value;
+    let role=document.querySelector("#role").value;
+    let x=document.querySelector("#twitter").value;
+    let linkedin=document.querySelector("#linkedin").value;
+    let github=document.querySelector("#github").value;
+
+    let user={
+    name:name,
+    mail:email,
+    phone:phone,
+    Address:address,
+    Role:role,
+    Bio:bio,
+    Twitter:x,
+    LinkedIn:linkedin,
+    GitHub:github
+  }
+
+    data=JSON.stringify(user);
+    addUser(data);
+    })
+  </script>
+</body>
+</html>
