@@ -63,3 +63,24 @@ h2 {
   margin:20px, auto;
   color: darkblue;
 }
+
+#search-input{
+  max-width: 95%;
+}
+.movie-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+  width:100%;
+  padding:12px 16px;
+  border-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.movie-item p{
+  font-size:16px;
+  color: darkblue;
+  flex:1;
+}
+
