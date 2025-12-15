@@ -1,7 +1,6 @@
 <?php
 header("Content-Type: application/json");
 
-// Read JSON data from JS
 $data = json_decode(file_get_contents("php://input"), true);
 
 $name = trim($data['name'] ?? '');
@@ -11,9 +10,6 @@ $confirm_password = $data['password2'] ?? '';
 
 $errors = [];
 
-/* ==========================
-   Validation
-   ========================== */
 if ($name === '') {
     $errors['name'] = "Name is required.";
 }
@@ -36,17 +32,11 @@ if ($password !== $confirm_password) {
     $errors['confirm'] = "Passwords do not match.";
 }
 
-/* ==========================
-   STOP if ANY error
-   ========================== */
 if (!empty($errors)) {
     echo json_encode(["errors" => $errors]);
     exit();
 }
 
-/* ==========================
-   File handling
-   ========================== */
 $file = "../users.json";
 
 if (!file_exists($file)) {
@@ -59,25 +49,18 @@ if (!is_array($users)) {
     $users = [];
 }
 
-/* ==========================
-   Hash password & append
-   ========================== */
+
 $users[] = [
     "name" => $name,
     "email" => $email,
     "password" => password_hash($password, PASSWORD_DEFAULT)
 ];
 
-/* ==========================
-   Write updated array
-   ========================== */
+
 if (file_put_contents($file, json_encode($users, JSON_PRETTY_PRINT)) === false) {
     echo json_encode(["errors" => ["file" => "Failed to save user data."]]);
     exit();
 }
 
-/* ==========================
-   Success
-   ========================== */
 echo json_encode(["success" => "Successfully Registered"]);
 exit();
