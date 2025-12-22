@@ -1,0 +1,66 @@
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.back-btn {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: whitesmoke;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+.students-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.students-table th, .students-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease; /* smooth hover */
+}
+
+.students-table th {
+    background-color: #eee;
+}
+
+.students-table tr:hover {
+    background-color: whitesmoke;
+}
+
+.students-table th:hover {
+    background-color: whitesmoke;
+}
+
+.students-table ul {
+    margin: 0;
+    padding-left: 20px;
+}
