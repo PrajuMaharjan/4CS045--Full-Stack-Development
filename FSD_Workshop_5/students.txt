@@ -1,4 +1,2 @@
 {"Name":"Gkdk","Email":"prajumaharjan903@gmail.com","Skills":["None"],"Photo":""}
-{"Name":"Praju Mahatrjan","Email":"np03cs4a240217@heraldcollege.edu.np","Skills":["None"],"Photo":"np03cs4a240217_heraldcollege.edu.np_1766371872.png"}
-{"Name":"Praju Mahatrjan","Email":"np03cs4a240217@heraldcollege.edu.np","Skills":["None"],"Photo":""}
-{"Name":"Praju Mahatrjan","Email":"np03cs4a240217@heraldcollege.edu.np","Skills":["None"],"Photo":""}
+{"Name":"Praju Maharjan","Email":"np03cs4a240217@heraldcollege.edu.np","Skills":["AI","Full Stack Development"],"Photo":""}
