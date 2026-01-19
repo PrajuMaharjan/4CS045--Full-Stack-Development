@@ -20,7 +20,7 @@ public function find($id){
 }
 
 public function create($name,$email,$course){
-	$stmt=$this->pdo->prepare("INSERT INTO students($name,$email,$course) VALUES (?,?,?)");
+	$stmt=$this->pdo->prepare("INSERT INTO students(name,email,course) VALUES (?,?,?)");
 	return $stmt->execute([$name,$email,$course]);
 }
 
@@ -31,7 +31,7 @@ public function update($id,$name,$email,$course){
 
 public function delete($id){
 	$stmt=$this->pdo->prepare("DELETE FROM students WHERE id=?");
-	return $stmr->execute([$id]);
+	return $stmt->execute([$id]);
 }
 
 }

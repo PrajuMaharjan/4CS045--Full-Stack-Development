@@ -22,13 +22,19 @@ switch($page){
 		$controller->store();
 		break;
 	case 'edit':
+	if(isset($_GET['id'])){
 		$controller->edit($_GET['id']);
+		}
 		break;
 	case 'update':
+	if(isset($_GET['id'])){
 		$controller->update($_GET['id']);
+		}
 		break;
 	case 'delete':
+		if(isset($_GET['id'])){
 		$controller->delete($_GET['id']);
+		}
 		break;
 	default:
 		$controller->index();
