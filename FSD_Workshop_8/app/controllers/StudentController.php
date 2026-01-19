@@ -23,6 +23,7 @@ class StudentController{
 	public function store(){
 		$this->student->create($_POST['name'],$_POST['email'],$_POST['course']);
 		header("Location:index.php");
+		exit;
 	}
 
 	public function edit($id){
@@ -33,10 +34,12 @@ class StudentController{
 	public function update($id){
 		$this->student->update($id,$_POST['name'],$_POST['email'],$_POST['course']);
 		header("Location: index.php");
+		exit;
 	}
 	public function delete($id){
 		$this->student->delete($id);
 		header("Location: index.php");
+		exit;
 	}
 }
 

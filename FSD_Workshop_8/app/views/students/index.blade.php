@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 <h2>Students</h2>
-<a href="index.php?php?page=create">Add Student</a>
+<a href="index.php?page=create">Add Student</a>
 <table>
 	<tr>
 		<th>Name</th>
